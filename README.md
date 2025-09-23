@@ -38,6 +38,7 @@ Substitua <nome_do_banco> pelo nome que deseja para o banco.
 
 Digite sua senha quando solicitado.
 
+```
 📝 Exemplos de Consultas SQL
 
 -- Selecionar todos os carros
@@ -48,3 +49,4 @@ SELECT * FROM Carros WHERE marca = 'Toyota';
 
 -- Contar quantos carros existem por ano
 SELECT ano, COUNT(*) as total FROM Carros GROUP BY ano;
+

@@ -13,7 +13,6 @@ Este repositório contém o banco de dados **carros.sql**, com tabelas e dados d
 | Tabela      | Descrição                                  |
 |------------|-------------------------------------------|
 | `Carros`   | Informações sobre modelos, marcas e anos |
-| (outras)   | Adicione aqui outras tabelas, se houver  |
 
 ---
 
@@ -32,3 +31,20 @@ Este repositório contém o banco de dados **carros.sql**, com tabelas e dados d
 
 ```bash
 mysql -u <usuario> -p <nome_do_banco> < carros.sql
+
+Substitua <usuario> pelo seu usuário MySQL.
+
+Substitua <nome_do_banco> pelo nome que deseja para o banco.
+
+Digite sua senha quando solicitado.
+
+📝 Exemplos de Consultas SQL
+
+-- Selecionar todos os carros
+SELECT * FROM Carros;
+
+-- Filtrar carros por marca
+SELECT * FROM Carros WHERE marca = 'Toyota';
+
+-- Contar quantos carros existem por ano
+SELECT ano, COUNT(*) as total FROM Carros GROUP BY ano;

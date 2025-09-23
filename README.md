@@ -1,13 +1,34 @@
-# Projeto Carros - MySQL
+# 🚗 Projeto Carros - Banco de Dados MySQL
 
-Este projeto contém o banco de dados MySQL "carros.sql" com tabelas e dados de exemplo.
+![GitHub Repo Size](https://img.shields.io/github/repo-size/MrRobii/meu-projeto-mysql?style=flat-square)
+![GitHub Language](https://img.shields.io/github/languages/top/MrRobii/meu-projeto-mysql?style=flat-square)
+![GitHub License](https://img.shields.io/github/license/MrRobii/meu-projeto-mysql?style=flat-square)
 
-## Como usar
+Este repositório contém o banco de dados **carros.sql**, com tabelas e dados de exemplo sobre carros.
 
-1. Abra o MySQL Workbench ou outro cliente MySQL.
-2. Importe o arquivo `carros.sql`.
-3. O banco estará pronto para uso.
+---
 
-## Estrutura do banco
+## 🗂 Estrutura do Banco
 
-- Tabela `Carros`: informações sobre modelos, marcas e anos.
+| Tabela      | Descrição                                  |
+|------------|-------------------------------------------|
+| `Carros`   | Informações sobre modelos, marcas e anos |
+| (outras)   | Adicione aqui outras tabelas, se houver  |
+
+---
+
+## ⚡ Como importar o banco MySQL
+
+### 1️⃣ Usando MySQL Workbench (GUI)
+
+1. Abra o **MySQL Workbench**.
+2. Conecte-se ao seu servidor MySQL.
+3. Vá em **Server → Data Import**.
+4. Escolha **Import from Self-Contained File** e selecione [`carros.sql`](carros.sql).
+5. Clique em **Start Import**.
+6. O banco será criado e estará pronto para uso.
+
+### 2️⃣ Usando Linha de Comando (Terminal / CMD)
+
+```bash
+mysql -u <usuario> -p <nome_do_banco> < carros.sql

@@ -48,6 +48,8 @@ SELECT * FROM Carros WHERE marca = 'Toyota';
 -- Contar quantos carros existem por ano
 SELECT ano, COUNT(*) AS total FROM Carros GROUP BY ano;
 
+---
+
 🧠 Exemplos de Consultas SQL
 
 -- Selecionar todos os carros
@@ -59,12 +61,16 @@ SELECT * FROM Carros WHERE marca = 'Toyota';
 -- Contar quantos carros existem por ano
 SELECT ano, COUNT(*) AS total FROM Carros GROUP BY ano;
 
+---
+
 💡 Objetivo do Projeto
 
 Este projeto foi criado para:
 Praticar comandos SQL (SELECT, INSERT, UPDATE, DELETE).
 Aprender estruturação de tabelas relacionais.
 Simular cenários reais de análise de dados automotivos.
+
+---
 
 ⭐ Se este projeto te ajudou, deixe uma estrela e contribua!
 
